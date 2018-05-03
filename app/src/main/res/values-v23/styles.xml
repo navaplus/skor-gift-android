@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:windowBackground">@color/color_window_background</item>
+        <item name="android:textColorPrimary">@color/color_textcolor_primary</item>
+
+        <!-- Status bar stuff. -->
+        <item name="android:statusBarColor">@color/color_statusbar</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

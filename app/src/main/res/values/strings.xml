@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">skor-gift-android</string>
+    <string name="app_name">SKORGift</string>
+
+    <!-- Splash -->
+    <string name="desc_splash">Splash Screen</string>
+
+    <!-- Welcome -->
+    <string name="title_create_account">CREATE AN ACCOUNT</string>
+    <string name="title_already_have_account">Already have account?</string>
+    <string name="title_sign_in_here">Sign in here</string>
+    <string name="title_welcome1">Pick the best gift easily for your loved ones (or for yourself!)</string>
+    <string name="title_welcome2">Get exclusive member discounts at many merchants around you</string>
+    <string name="title_welcome3">Get creative and personalize your gift greeting cards!</string>
+
 </resources>

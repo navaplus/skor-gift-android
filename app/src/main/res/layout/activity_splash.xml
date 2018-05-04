@@ -3,17 +3,15 @@
     android:id="@+id/activity_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_splash_background"
+    android:background="@drawable/shape_splash_background"
     tools:context=".SplashActivity" >
 
     <ImageView
         android:id="@+id/imageview_splash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:padding="16dp"
-        android:src="@mipmap/ic_launcher"
-        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_splash"
+        android:scaleType="centerCrop"
         android:contentDescription="@string/desc_splash" />
     
 </RelativeLayout>

@@ -10,9 +10,9 @@
 
     <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/color_splash_background</item>
-        <item name="colorPrimaryDark">@color/color_splash_background</item>
-        <item name="colorAccent">@color/color_textcolor_primary</item>
+        <item name="colorPrimary">@color/color_splash_top_background</item>
+        <item name="colorPrimaryDark">@color/color_splash_top_background</item>
+        <item name="colorAccent">@android:color/white</item>
     </style>
 
 </resources>

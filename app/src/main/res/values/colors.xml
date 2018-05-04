@@ -8,6 +8,7 @@
     <color name="color_textcolor_primary">#000000</color>
 
     <!-- Splash Screen -->
-    <color name="color_splash_background">#BF0000</color>
+    <color name="color_splash_top_background">#EA5025</color>
+    <color name="color_splash_bottom_background">#BF0000</color>
 
 </resources>

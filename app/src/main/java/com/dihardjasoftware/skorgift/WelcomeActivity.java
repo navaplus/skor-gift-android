@@ -1,10 +1,13 @@
 package com.dihardjasoftware.skorgift;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.dihardjasoftware.skorgift.welcome.WelcomePagerAdapter;
 
@@ -17,6 +20,10 @@ public class WelcomeActivity extends AppCompatActivity {
 	//Adapter
 	private WelcomePagerAdapter mPagerAdapter;
 
+	//Action
+	public static final int ACTION_CREATE_ACCOUNT = 1;
+	public static final int ACTION_SIGN_IN = 2;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -25,6 +32,26 @@ public class WelcomeActivity extends AppCompatActivity {
 		initData();
 		initLayout();
 		initEvent();
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+
+		if (requestCode == ACTION_CREATE_ACCOUNT) {
+			if (resultCode == Activity.RESULT_OK) {
+				//TODO: Create account success action
+				startActivity(new Intent(this, MainActivity.class));
+				finish();
+			}
+		}
+		else if (requestCode == ACTION_SIGN_IN) {
+			if (resultCode == Activity.RESULT_OK) {
+				//TODO: Sign In success action
+				startActivity(new Intent(this, MainActivity.class));
+				finish();
+			}
+		}
 	}
 
 	protected void initData() {
@@ -41,5 +68,14 @@ public class WelcomeActivity extends AppCompatActivity {
 
 	protected void initEvent() {
 
+	}
+
+	//Event
+	public void createAccountButtonClicked(View view) {
+		startActivityForResult(new Intent(this, CreateAccountActivity.class), ACTION_CREATE_ACCOUNT);
+	}
+
+	public void signInButtonClicked(View view) {
+		startActivityForResult(new Intent(this, SignInActivity.class), ACTION_SIGN_IN);
 	}
 }

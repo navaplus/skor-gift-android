@@ -32,20 +32,20 @@ public class WelcomePagerAdapter extends FragmentPagerAdapter {
 		if (position == 0) {
 			mFirstFragment = fragment;
 			args.putInt(WelcomeFragment.ARGUMENT_BACKGROUND_RESOURCE_ID, R.drawable.shape_welcome1_background);
-			args.putInt(WelcomeFragment.ARGUMENT_IMAGE_RESOURCE_ID, R.mipmap.ic_launcher);
-			args.putInt(WelcomeFragment.ARGUMENT_TEXT_RESOURCE_ID, R.string.title_welcome1);
+			args.putInt(WelcomeFragment.ARGUMENT_IMAGE_RESOURCE_ID, R.drawable.img_welcome1);
+			args.putInt(WelcomeFragment.ARGUMENT_TEXT_RESOURCE_ID, R.string.msg_welcome1);
 		}
 		else if (position == 1) {
 			mSecondFragment = fragment;
 			args.putInt(WelcomeFragment.ARGUMENT_BACKGROUND_RESOURCE_ID, R.drawable.shape_welcome2_background);
-			args.putInt(WelcomeFragment.ARGUMENT_IMAGE_RESOURCE_ID, R.mipmap.ic_launcher);
-			args.putInt(WelcomeFragment.ARGUMENT_TEXT_RESOURCE_ID, R.string.title_welcome2);
+			args.putInt(WelcomeFragment.ARGUMENT_IMAGE_RESOURCE_ID, R.drawable.img_welcome2);
+			args.putInt(WelcomeFragment.ARGUMENT_TEXT_RESOURCE_ID, R.string.msg_welcome2);
 		}
 		else if (position == 2) {
 			mThirdFragment = fragment;
 			args.putInt(WelcomeFragment.ARGUMENT_BACKGROUND_RESOURCE_ID, R.drawable.shape_welcome3_background);
-			args.putInt(WelcomeFragment.ARGUMENT_IMAGE_RESOURCE_ID, R.mipmap.ic_launcher);
-			args.putInt(WelcomeFragment.ARGUMENT_TEXT_RESOURCE_ID, R.string.title_welcome3);
+			args.putInt(WelcomeFragment.ARGUMENT_IMAGE_RESOURCE_ID, R.drawable.img_welcome3);
+			args.putInt(WelcomeFragment.ARGUMENT_TEXT_RESOURCE_ID, R.string.msg_welcome3);
 		}
 
 		fragment.setArguments(args);

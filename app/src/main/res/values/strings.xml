@@ -6,10 +6,21 @@
 
     <!-- Welcome -->
     <string name="title_create_account">CREATE AN ACCOUNT</string>
-    <string name="title_already_have_account">Already have account?</string>
-    <string name="title_sign_in_here">Sign in here</string>
-    <string name="title_welcome1">Pick the best gift easily for your loved ones (or for yourself!)</string>
-    <string name="title_welcome2">Get exclusive member discounts at many merchants around you</string>
-    <string name="title_welcome3">Get creative and personalize your gift greeting cards!</string>
+    <string name="txt_already_have_account">Already have account?</string>
+    <string name="txt_sign_in_here">Sign in here</string>
+    <string name="msg_welcome1">Pick the best gift easily for your loved ones (or for yourself!)</string>
+    <string name="msg_welcome2">Get exclusive member discounts at many merchants around you</string>
+    <string name="msg_welcome3">Get creative and personalize your gift greeting cards!</string>
+
+    <!-- Create Account -->
+    <string name="txt_email">Email</string>
+    <string name="txt_confirm_email">Confirm Email</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_confirm_password">Confirm Password</string>
+    <string name="msg_sign_up_read_term">By signing up, you have read and agreed with SKORGift terms and conditions</string>
+
+    <!-- Sign In -->
+    <string name="title_sign_in">SIGN IN</string>
+    <string name="title_forgot_password">FORGOT PASSWORD</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.dihardjasoftware.skorgift;
+package com.skorgift.android;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.dihardjasoftware.skorgift.welcome.WelcomePagerAdapter;
+import com.skorgift.android.welcome.WelcomePagerAdapter;
 
 public class WelcomeActivity extends AppCompatActivity {
 

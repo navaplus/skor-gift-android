@@ -1,4 +1,4 @@
-package com.dihardjasoftware.skorgift;
+package com.skorgift.android;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class CreateAccountActivity extends AppCompatActivity {
+public class SignInActivity extends AppCompatActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_create_account);
+		setContentView(R.layout.activity_sign_in);
 
 		initData();
 		initLayout();
@@ -35,9 +35,9 @@ public class CreateAccountActivity extends AppCompatActivity {
 		onBackPressed();
 	}
 
-	public void createAccountButtonClicked(View view) {
+	public void signInButtonClicked(View view) {
 		//TODO: Validate input
-		//TODO: Call Create Account API
+		//TODO: Call Sign In API
 		setResult(Activity.RESULT_OK, new Intent());
 		finish();
 	}

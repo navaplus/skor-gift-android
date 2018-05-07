@@ -1,4 +1,4 @@
-package com.dihardjasoftware.skorgift;
+package com.skorgift.android;
 
 import org.junit.Test;
 

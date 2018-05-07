@@ -1,21 +1,14 @@
-package com.dihardjasoftware.skorgift.welcome;
+package com.skorgift.android.welcome;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.ToggleButton;
 
-import com.dihardjasoftware.skorgift.R;
-
-import java.util.ArrayList;
-
-import retrofit2.Call;
+import com.skorgift.android.R;
 
 /**
  * Created by Ferry on 3/5/2018.

@@ -1,5 +1,7 @@
-package com.dihardjasoftware.skorgift;
+package com.skorgift.android;
 
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -62,6 +64,10 @@ public class SplashActivity extends AppCompatActivity {
 	protected void initialize() {
 		//mActivityBackground.setBackgroundColor(0xFF6A6A6A);
 		//mSplashLogo.setImageResource(R.drawable.launch_image);
+
+		//Cancel all notification
+		NotificationManager notificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+		notificationManager.cancelAll();
 	}
 	
 	protected void onDismiss() {

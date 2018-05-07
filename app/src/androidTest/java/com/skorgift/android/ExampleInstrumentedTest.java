@@ -1,4 +1,4 @@
-package com.dihardjasoftware.skorgift;
+package com.skorgift.android;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

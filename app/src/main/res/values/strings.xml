@@ -23,4 +23,24 @@
     <string name="title_sign_in">SIGN IN</string>
     <string name="title_forgot_password">FORGOT PASSWORD</string>
 
+    <!-- Home -->
+    <string name="title_your_points">YOUR POINTS</string>
+    <string name="title_buy_points">BUY POINTS</string>
+    <string name="title_transfer_points">TRANSFER</string>
+    <string name="title_send_egift">SEND EGIFT</string>
+    <string name="txt_redeem_points_with_gift">Redeem Points with Gifts</string>
+    <string name="txt_topup">Top Up</string>
+    <string name="txt_evoucher">e-Voucher</string>
+    <string name="txt_voucher">Voucher</string>
+    <string name="txt_ecommerce_more">eCommerce &amp; More</string>
+    <string name="txt_get_free_discount">Get Free Discounts</string>
+    <string name="txt_food_bev">Food &amp; Bev</string>
+    <string name="txt_health_fit">Heath &amp; Fitness</string>
+    <string name="txt_lifestyle">Lifestyle &amp; Recreation</string>
+    <string name="txt_essential_more">Essential &amp; More</string>
+    <string name="txt_featured_gift">Featured Gifts</string>
+    <string name="title_see_all_gift">SEE ALL GIFTS</string>
+    <string name="title_redeem">REDEEM</string>
+
+
 </resources>

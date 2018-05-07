@@ -68,7 +68,7 @@ public class SplashActivity extends AppCompatActivity {
 		//TODO: Validate login
 		boolean hasLogin = false;
 		if (hasLogin)
-			startActivity(new Intent(this, MainActivity.class));
+			startActivity(new Intent(this, HomeActivity.class));
 		else
 			startActivity(new Intent(this, WelcomeActivity.class));
 	}

@@ -32,7 +32,7 @@
             android:theme="@style/SplashTheme"
             android:windowSoftInputMode="stateHidden"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:configChanges="orientation|screenSize|keyboard"/>
     </application>
 

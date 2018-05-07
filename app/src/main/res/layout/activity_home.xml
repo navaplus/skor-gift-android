@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_window_background"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/color_actionbar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logo"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/color_actionbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="110dp"
+            android:background="#EA5024"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_your_points"
+                android:textSize="10sp"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/ic_trophy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="200000"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="#EA5024"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:orientation="vertical"
+            android:onClick="buyPointsButtonClicked">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_buy"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/title_buy_points"
+                android:textSize="9sp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="#EA5024"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:orientation="vertical"
+            android:onClick="transferButtonClicked">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_transfer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/title_transfer_points"
+                android:textSize="9sp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="#EA5024"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:orientation="vertical"
+            android:onClick="sendEGiftButtonClicked">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_send_egift"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/title_send_egift"
+                android:textSize="9sp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@android:color/white">
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <android.support.design.widget.TabLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    app:tabBackground="@drawable/selector_tab_dot"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_redeem_points_with_gift"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_button_home_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:onClick="topupButtonClicked">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_topup"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/txt_topup"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_button_home_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical"
+                    android:onClick="eVoucherButtonClicked">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_evoucher"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/txt_evoucher"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_button_home_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical"
+                    android:onClick="voucherButtonClicked">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_voucher"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/txt_voucher"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_button_home_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical"
+                    android:onClick="eCommerceMoreButtonClicked">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_ecommerce"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/txt_ecommerce_more"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_get_free_discount"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_button_home_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:onClick="foodBevButtonClicked">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_food_bev"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/txt_food_bev"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_button_home_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical"
+                    android:onClick="healthFitnessButtonClicked">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_health_fitness"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/txt_health_fit"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_button_home_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical"
+                    android:onClick="lifeStyleButtonClicked">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_lifestyle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/txt_lifestyle"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_button_home_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical"
+                    android:onClick="essentialMoreButtonClicked">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_essential"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/txt_essential_more"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_featured_gift"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_gift" />
+                <include layout="@layout/item_gift" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/title_see_all_gift"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/color_button"
+                android:onClick="seeAllGiftButtonClicked"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

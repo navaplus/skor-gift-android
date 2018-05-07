@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -41,14 +40,14 @@ public class WelcomeActivity extends AppCompatActivity {
 		if (requestCode == ACTION_CREATE_ACCOUNT) {
 			if (resultCode == Activity.RESULT_OK) {
 				//TODO: Create account success action
-				startActivity(new Intent(this, MainActivity.class));
+				startActivity(new Intent(this, HomeActivity.class));
 				finish();
 			}
 		}
 		else if (requestCode == ACTION_SIGN_IN) {
 			if (resultCode == Activity.RESULT_OK) {
 				//TODO: Sign In success action
-				startActivity(new Intent(this, MainActivity.class));
+				startActivity(new Intent(this, HomeActivity.class));
 				finish();
 			}
 		}

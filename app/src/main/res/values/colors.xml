@@ -2,9 +2,11 @@
 <resources>
     <color name="color_primary">#F3F3F3</color>
     <color name="color_primary_dark">#000000</color>
-    <color name="color_accent">#EA5024</color>
+    <color name="color_accent">#000000</color>
     <color name="color_statusbar">#F3F3F3</color>
-    <color name="color_window_background">#F8F8F8</color>
+    <color name="color_actionbar">#F3F3F3</color>
+    <color name="color_button">#EA5024</color>
+    <color name="color_window_background">#F1F1F1</color>
     <color name="color_textcolor_primary">#000000</color>
 
     <!-- Splash Screen -->

@@ -24,6 +24,10 @@
     <string name="title_forgot_password">FORGOT PASSWORD</string>
 
     <!-- Home -->
+    <string name="txt_home">Home</string>
+    <string name="txt_gifts">Gifts</string>
+    <string name="txt_discounts">Discounts</string>
+    <string name="txt_account">Account</string>
     <string name="title_your_points">YOUR POINTS</string>
     <string name="title_buy_points">BUY POINTS</string>
     <string name="title_transfer_points">TRANSFER</string>
@@ -42,5 +46,9 @@
     <string name="title_see_all_gift">SEE ALL GIFTS</string>
     <string name="title_redeem">REDEEM</string>
 
-
+    <!-- Gift -->
+    <string name="txt_gift_topup_voucher">Top Up Voucher</string>
+    <string name="txt_gift_evoucher">E-Voucher</string>
+    <string name="txt_gift_voucher">Voucher</string>
+    <string name="txt_gift_ecommerce_more">E-Commerce &amp; More</string>
 </resources>

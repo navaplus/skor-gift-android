@@ -9,153 +9,7 @@
     android:orientation="vertical"
     tools:context=".HomeActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:background="@color/color_actionbar">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_logo"
-            android:layout_centerInParent="true"/>
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:orientation="horizontal"
-        android:background="@color/color_actionbar">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:minWidth="110dp"
-            android:background="#EA5024"
-            android:padding="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/title_your_points"
-                android:textSize="10sp"
-                android:textColor="@android:color/white" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginRight="4dp"
-                    android:src="@drawable/ic_trophy"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:text="200000"
-                    android:textSize="15sp"
-                    android:textColor="@android:color/white" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:clickable="true"
-            android:focusable="true"
-            android:background="#EA5024"
-            android:layout_weight="1"
-            android:layout_marginLeft="1dp"
-            android:orientation="vertical"
-            android:onClick="buyPointsButtonClicked">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="2dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_buy"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:text="@string/title_buy_points"
-                android:textSize="9sp"
-                android:textColor="@android:color/white" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:clickable="true"
-            android:focusable="true"
-            android:background="#EA5024"
-            android:layout_weight="1"
-            android:layout_marginLeft="1dp"
-            android:orientation="vertical"
-            android:onClick="transferButtonClicked">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="2dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_transfer"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:text="@string/title_transfer_points"
-                android:textSize="9sp"
-                android:textColor="@android:color/white" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:clickable="true"
-            android:focusable="true"
-            android:background="#EA5024"
-            android:layout_weight="1"
-            android:layout_marginLeft="1dp"
-            android:orientation="vertical"
-            android:onClick="sendEGiftButtonClicked">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="2dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_send_egift"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:text="@string/title_send_egift"
-                android:textSize="9sp"
-                android:textColor="@android:color/white" />
-        </LinearLayout>
-    </LinearLayout>
+    <include layout="@layout/layout_header" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -474,12 +328,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
                 android:orientation="vertical">
 
-                <include layout="@layout/item_gift" />
-                <include layout="@layout/item_gift" />
+                <include layout="@layout/item_voucher" />
+                <include layout="@layout/item_voucher" />
             </LinearLayout>
 
             <Button

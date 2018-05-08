@@ -3,12 +3,12 @@ package com.skorgift.android;
 import android.os.Bundle;
 import android.view.View;
 
-public class HomeActivity extends MainActivity {
+public class GiftsActivity extends MainActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_home);
+		setContentView(R.layout.activity_gifts);
 
 		initData();
 		initLayout();
@@ -24,8 +24,8 @@ public class HomeActivity extends MainActivity {
 	protected void initLayout() {
 		super.initLayout();
 
-		mHomeImageView.setImageResource(R.drawable.ic_home_on);
-		mHomeTextView.setTextColor(getResources().getColor(R.color.color_button));
+		mGiftsImageView.setImageResource(R.drawable.ic_gift_on);
+		mGiftsTextView.setTextColor(getResources().getColor(R.color.color_button));
 	}
 
 	@Override
@@ -47,26 +47,6 @@ public class HomeActivity extends MainActivity {
 	}
 
 	public void eCommerceMoreButtonClicked(View view) {
-
-	}
-
-	public void foodBevButtonClicked(View view) {
-
-	}
-
-	public void healthFitnessButtonClicked(View view) {
-
-	}
-
-	public void lifeStyleButtonClicked(View view) {
-
-	}
-
-	public void essentialMoreButtonClicked(View view) {
-
-	}
-
-	public void seeAllGiftButtonClicked(View view) {
 
 	}
 }

@@ -5,6 +5,7 @@
     <color name="color_accent">#000000</color>
     <color name="color_statusbar">#F3F3F3</color>
     <color name="color_actionbar">#F3F3F3</color>
+    <color name="color_button_inactive">#C2C2C2</color>
     <color name="color_button">#EA5024</color>
     <color name="color_window_background">#F1F1F1</color>
     <color name="color_textcolor_primary">#000000</color>
